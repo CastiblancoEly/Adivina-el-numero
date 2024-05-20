@@ -1,0 +1,54 @@
+body{
+    background-image: url(./Imagenes/¡Adivina\ el\ número!.png);
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+#container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    width: 60vw;
+    height: 60vh;
+}
+
+#tablero {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    padding: 50px;
+    box-sizing: border-box;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(0, 2, 5);
+    border: 2px solid cornflowerblue;
+}
+
+.lost {
+    background-color:red;
+}
+
+.Winner {
+    background-color: green;
+}
