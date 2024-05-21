@@ -5,7 +5,8 @@ let chooser = []
 let actualChoosed
 let secretNumber = getRandomInt()
 console.log(secretNumber)
-const message = document.querySelector('.message');
+let randomMessage = ['Lo estás haciendo bien', 'Well done', 'Buen trabajo', 'Dabuti']
+let message
 let body = document.querySelector('body')
 let tablero
 
@@ -66,23 +67,23 @@ function handleEndGame() {
 
 }
 //Hacemos que el usuario compare su número con el escogido con el ordenador
+
 function testNum(item) {
     let result;
     if (actualChoosed === secretNumber) {
         item.classList.add('Winner');
-        if (message && message.textContent !== undefined) {
-            message.textContent = "Felicidades";
-        } else {
-            console.error("El elemento `message` no está correctamente definido.");
-        }
         // Asegúrate de que handleEndGame esté definido y no cause errores
         if (typeof handleEndGame === 'function') {
             handleEndGame();
         } else {
-            console.error("La función `handleEndGame` no está definida o no es una función.");
+            
         }
     } else {
         item.classList.add("lost")
+        message = document.createElement('h2')
+        message.innerText = randomMessage[Math.floor(Math.random() * randomMessage.length)]
+        console.log(message)
     }
     return result;
 }
+
