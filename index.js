@@ -72,7 +72,7 @@ function handleEndGame() {
     winnerScreen.innerHTML = 
     `
 
-        <button id="restart">RESTART</button>
+        <button id="restart" class="btn">RESTART</button>
     `
     container.removeChild(tablero)
     body.insertBefore(winnerScreen, container)
@@ -120,7 +120,7 @@ function startGame() {
     windowStart.innerHTML =
         `
 
-        <button id="btnStart">START</button>
+        <button id="btnStart" class="btn">START</button>
     `
     body.insertBefore(windowStart, container)
     let buttonStart = document.querySelector("#btnStart")
