@@ -5,7 +5,7 @@ let chooser = []
 let actualChoosed
 let attemps = 0
 let secretNumber 
-let randomMessage = ['Lo estás haciendo bien', 'Well done', 'Buen trabajo', 'Dabuti']
+let randomMessage = ['Lo estás haciendo bien', 'Ya casi']
 let message
 let body = document.querySelector('body')
 let tablero
@@ -39,7 +39,7 @@ function filltablero() {
     
     
     attempsDiv = document.createElement('div')
-    attempsDiv.innerHTML = `<h3>Número de intentos: ${attemps}</h3>`
+    attempsDiv.innerHTML = `<h3>Número de intentos: ${attemps} </h3>`
     
     
     //Insertar el tablero en el contenedor para que aparezca

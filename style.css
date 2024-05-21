@@ -1,21 +1,20 @@
-body{
+body {
     background-image: url(./Imagenes/baKC.png);
     background-position: center;
-
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0px;
     padding: 0px;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
 
 .relative {
     position: relative;
 }
 
-#container{
+#container {
 
     display: flex;
     flex-direction: column;
@@ -41,7 +40,7 @@ body{
     height: 100%;
 }
 
-.number{
+.number {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +51,7 @@ body{
 }
 
 .lost {
-    background-color:red;
+    background-color: red;
 }
 
 .Winner {
@@ -75,7 +74,7 @@ body{
 
 }
 
-.btn{
+.btn {
     padding: 10px 20px;
     font-size: 36px;
     margin-top: 10px;
@@ -86,19 +85,21 @@ body{
 
 
 
-#start{
+#start {
     display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        margin-bottom: 200px;
-        align-items: center;
-        width: 100%;
-        height: 100vh;
-        background-image: url("./Imagenes/Portada1.gif");
-        background-position: center;
-        background-size: cover;
-        z-index: 20;
-        position: absolute;
-        background-color: #ff96ff;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("./Imagenes/Portada1.gif");
+    background-position: center;
+    background-size: cover;
+    z-index: 20;
+    position: absolute;
+    background-color: #ff96ff;
 }
 
+#btnStart {
+    margin-bottom: 150px;
+}
