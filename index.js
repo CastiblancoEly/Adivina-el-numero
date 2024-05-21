@@ -15,12 +15,11 @@ let attempsDiv
 let windowStart
 
 
-
 //crear cuadrícula
 function filltablero() {
     secretNumber = getRandomInt()
     console.log(secretNumber)
-
+    
     let header = document.createElement('div')
     header.setAttribute('class', 'header')
     tablero = document.createElement('div')
@@ -37,16 +36,16 @@ function filltablero() {
         //Insertar la celda al tablero
         tablero.appendChild(cell)
     }
-
-
+    
+    
     attempsDiv = document.createElement('div')
     attempsDiv.innerHTML = `<h3>Número de intentos: ${attemps}</h3>`
-
-
+    
+    
     //Insertar el tablero en el contenedor para que aparezca
     container.appendChild(tablero)
     container.appendChild(attempsDiv)
-
+    
     //Añade un chismoso que detecta cuando hacemos "Click"
     let allCells = document.querySelectorAll('.number')
     console.log(allCells)
@@ -71,14 +70,14 @@ function handleEndGame() {
     winnerScreen.setAttribute("id", "win")
     winnerScreen.innerHTML = 
     `
-
-        <button id="restart" class="btn">RESTART</button>
+    
+    <button id="restart" class="btn">RESTART</button>
     `
     container.removeChild(tablero)
     body.insertBefore(winnerScreen, container)
     body.classList.add('relative')
     restart()
-
+    
 }
 //Hacemos que el usuario compare su número con el escogido con el ordenador
 
@@ -118,9 +117,9 @@ function startGame() {
     windowStart = document.createElement("div")
     windowStart.setAttribute("id", "start")
     windowStart.innerHTML =
-        `
-
-        <button id="btnStart" class="btn">START</button>
+    `
+    
+    <button id="btnStart" class="btn">START</button>
     `
     body.insertBefore(windowStart, container)
     let buttonStart = document.querySelector("#btnStart")
@@ -133,6 +132,3 @@ function startGame() {
 window.onload = function(){
     startGame()
 }
-
-
-

@@ -1,6 +1,7 @@
 body{
     background-image: url(./Imagenes/baKC.png);
     background-position: center;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,3 +101,4 @@ body{
         position: absolute;
         background-color: #ff96ff;
 }
+
