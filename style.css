@@ -100,10 +100,10 @@ body {
 /* Estilo general para los botones */
 .btn {
     padding: 10px 20px;
-    font-size: 15px;
+    font-size: 40px;
     margin-top: 10px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: #ff96ff;
 }
 
